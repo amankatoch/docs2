@@ -1,0 +1,44 @@
+<div class="modal-dialog  accessControl">
+  <div class="modal-content">
+    <div class="modal-header  modal-header-primary blueHeader ">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+          style="color:white;">×</span></button>
+      <h4 class="modal-title">登陆</h4>
+    </div>
+    <div class="modal-body">
+
+      <div id="home_login_form">
+        <form>
+          <h2 class='text-danger reloginPopupForm'>{{message}}</h2>
+
+          <div class="home_input_icon" id="home_username">
+            <div class="home_img"><img src="/commons/images/用户ICON_03.jpg"></div>
+            <div class="home_input"><input type="text" placeholder="蓝证ID/邮箱/手机号" id="username" name="username">
+            </div>
+          </div>
+          <div class="home_input_icon" id="home_password">
+            <div class="home_img"><img src="/commons/images/平台密码ICON_03.jpg"></div>
+            <div class="home_input"><input type="password" placeholder="蓝证平台密码" id="password" name="password">
+            </div>
+          </div>
+          <div class="home_forget_password"><a class="content  clickToResetPw" href="#/home/forgetpw/forgotPw">忘记密码</a></div>
+          <div class="home_input_icon" id="home_captcha_box">
+            <div class="home_img"><img src="/commons/images/T_18.jpg"></div>
+
+
+            <input type="hidden" id="antiBotValue" name="antiBotValue" value="CWVM">
+          </div>
+          <h2 class='text-danger login-status'></h2>
+          <div class="home_input_icon" id="home_submit_buton">
+            <input type="image" id="homeLoginSubmit" name="login" src="/commons/images/signin.jpg"
+                   data-action-click='login'>
+          </div>
+        </form>
+      </div>
+
+
+
+      <!--end of modal body--->
+    </div>
+  </div>
+  </div>

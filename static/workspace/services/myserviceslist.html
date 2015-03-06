@@ -1,0 +1,63 @@
+<!--<div class="table-responsive lan-horizontal-scroll">
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>
+              <div style='width:700px'>
+                
+              </div>-->
+
+            
+              <div class="lan_table col-5-table">
+                <div class="lan_row">
+                    <div class="lan_cell Swap">服务代码</div>
+                    <div class="lan_cell Swap">服务名称</div>
+                    <div class="lan_cell Swap">服务类型</div>
+                    <div class="lan_cell Swap">价格（元）</div>
+                    <div class="lan_cell Swap">操作</div>
+                </div>
+              {{#items}}
+                <div class="lan_row">
+                    <div class="lan_cell">{{_id}}</div>
+                    <div class="lan_cell">{{serviceName}}</div>
+                    <div class="lan_cell">{{serviceType}}</div>
+                    <div class="lan_cell">{{price}}</div>
+                    <div class="lan_cell">
+                    {{#_id}}
+                     <ul class="lan_table_more">
+                         <li><a> 详细 </a>
+                             <ul>
+                                 <li><a>取消</a></li>
+                                 <li><a> 删除</a></li>
+                             </ul>
+                         </li>
+                     </ul>
+                    {{/_id}}
+                    </div>
+                </div>
+              {{/items}}
+            </div><!--end lan_table -->
+            <nav class="paginationContainer">
+                <ul class="pagination">
+                    <li><a>上一页</a></li>
+                    <li><a class="active">1</a></li>
+                    <li><a>2</a></li>
+                    <li><a>3</a></li>
+                    <li><a>4</a></li>
+                    <li><a>5</a></li>
+                    <li><a>下一页</a></li>
+                </ul>
+            </nav>
+            <!-- /pagging -->
+
+<!--            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>-->
+
+
+
+
+
+

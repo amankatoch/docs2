@@ -1,0 +1,55 @@
+{{#items.length}}
+<div class="lan_table  col-6-table">
+  <div class="lan_row">
+    <span class="lan_cell Swap">申请代码</span>
+    <span class="lan_cell Swap">申请标图</span>
+    <span class="lan_cell Swap">申请时间</span>
+    <span class="lan_cell Swap">申请人</span>
+    <span class="lan_cell Swap">申请状态</span>
+    <span class="lan_cell Swap">操作</span>
+  </div>
+  
+  
+  {{#items}}
+  <div class="lan_row">
+    <span class="lan_cell">{{code}}</span>
+    <span class="lan_cell">{{plotting}}</span>
+    <span class="lan_cell">{{period}}</span>
+    <span class="lan_cell">{{applicant}}</span>
+    <span class="lan_cell">{{status}}</span>
+    <span class="lan_cell">
+    {{#code}}
+    <ul class="lan_table_more">
+      <li ><a > 详细 </a>
+        <ul>
+          <li><a >取消</a></li>
+          <li><a > 删除</a></li>
+        </ul>
+      </li>
+    </ul>
+    {{/code}}
+    </span>
+  </div>
+  {{/items}}
+
+</div><!--end lan_table -->
+
+
+<nav class="paginationContainer">
+  <ul class="pagination">
+    <li><a >上一页</a></li>
+    <li><a  class="active">1</a></li>
+    <li><a >2</a></li>
+    <li><a >3</a></li>
+    <li><a >4</a></li>
+    <li><a >5</a></li>
+    <li><a >下一页</a></li>
+  </ul>
+</nav> <!-- /pagging -->
+
+
+
+{{/items.length}}
+{{^items.length}}
+No items found.
+{{/items.length}}

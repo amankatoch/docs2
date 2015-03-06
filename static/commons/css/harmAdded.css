@@ -1,0 +1,97 @@
+/*
+Added only to my branch and index.html to make merging easier. Working in workspace.css makes merging difficult
+*/
+/* 
+    Created on : Jan 5, 2015, 11:27:39 AM
+    Author     : Harm Meijer harmmeiier@gmail.com
+*/
+.displaymode div.listMode{
+	float: left;
+	margin-left: 2px;
+	width: 30px;
+	height: 30px;
+}
+.displaymode div.listMode{
+	background: url("/commons/images/IDphotoListModeUnselectedIcon.png") no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+	background-size: 100%;
+}
+.displaymode div.listMode.listModeClicked{
+	background: url("/commons/images/IDphotoListModeSelectedIcon.png") no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+	background-size: 100% !important;
+}
+/*if someting needs to be selected by default then set the class in the template, do not assume in css what is the default
+it is harder to script and impossible to change, re defining album mode*/
+.displaymode div.albumMode {
+    background: url("../images/viewSwitchingThumbnail2.png") no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+}
+.displaymode div.albumMode.albumModeClicked {
+    background: url("../images/viewSwitchingThumbnail1.png") no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+}
+.siglephotoAction input[type="radio"] {
+    height: 20px !important;
+    padding-right: 2px !important;
+    position: static;
+    width: 20px !important;
+}
+
+.blueButton.IDPhotoInspectionConfirm > span {
+    display: block;
+    margin: auto;
+    float: none;
+}
+
+.idPhotoGalery .left {
+    background: url("../images/left_blue.jpg") no-repeat scroll center center rgba(0, 0, 0, 0);
+    left: 5px;
+}
+.idPhotoGalery .right {
+    background: url("../images/right_blue.jpg") no-repeat scroll center center rgba(0, 0, 0, 0);
+    right: 5px;
+}
+.idPhotoGalery .left.disabled {
+  background: url("../images/left_grey.jpg") no-repeat scroll center center rgba(0, 0, 0, 0);
+  cursor:default;
+}
+.idPhotoGalery .right.disabled {
+  background: url("../images/right_grey.jpg") no-repeat scroll center center rgba(0, 0, 0, 0);
+  cursor:default;
+}
+
+.idPhotoGaleryArrowContainerLeft.disabled {
+  cursor:default;
+}
+.idPhotoGaleryArrowContainerRight.disabled {
+  cursor:default;  
+}
+
+
+/*Following can be used to wrap content in horizontal scroll when screen size goes below 767
+    <div class="table-responsive lan-horizontal-scroll">
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>
+              <div class='horizontal-filler small' style='width:700px'>                
+              </div>
+              content here
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>*/
+@media screen and (max-width: 767px) {
+  div.horizontal-filler.small {
+    display:table;
+  }
+}
+div.table-responsive.lan-horizontal-scroll table.table tbody tr td {
+  border-top : none;
+  padding : 0px;
+  width : 100%;
+}
+div.table-responsive.lan-horizontal-scroll table.table {
+  background-color : transparent;
+}
+div.horizontal-filler {
+  display:none;
+}

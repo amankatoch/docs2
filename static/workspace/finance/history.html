@@ -1,0 +1,53 @@
+
+
+<div class="lan_table col-6-table">
+  <div class="lan_row">
+    <span class="lan_cell Swap">交易代码</span>
+    <span class="lan_cell Swap">收支金额</span>
+    <span class="lan_cell Swap">可用金额</span>
+    <span class="lan_cell Swap">事务名称</span>
+    <span class="lan_cell Swap">交易时间</span>
+    <span class="lan_cell Swap">操作</span>
+  </div>
+  
+  {{#items}}
+  <div class="lan_row">
+    <span class="lan_cell">{{field1}}</span>
+    <span class="lan_cell {{color}}">{{field2}}</span><!-- add the class red to lan cell if its negative, green if it is positive -->
+    <span class="lan_cell">{{field3}}</span>
+    <span class="lan_cell">{{field4}}</span>
+    <span class="lan_cell">{{field5}}</span>
+    <span class="lan_cell">
+      {{#field1}}
+      <ul class="lan_table_more">
+        <li ><a > 详细 </a>
+          <ul>
+            <li><a > 导出</a></li>
+            <li><a >修改</a></li>
+            <li><a > 删除</a></li>
+          </ul>
+        </li>
+      </ul>
+      {{/field1}}
+    </span>
+  </div>
+  {{/items}}
+
+</div><!--end lan_table -->
+
+
+
+<nav class="paginationContainer">
+  <ul class="pagination">
+    <li><a >上一页</a></li>
+    <li><a class="active" >1</a></li>
+    <li><a >2</a></li>
+    <li><a >3</a></li>
+    <li><a >4</a></li>
+    <li><a >5</a></li>
+    <li><a >下一页</a></li>
+  </ul>
+</nav><!-- /pagination  -->
+
+
+<!-- /contaier bottom -->

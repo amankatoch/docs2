@@ -1,0 +1,49 @@
+
+
+<div class="lan_table col-6-table">
+  <div class="lan_row">
+    <span class="lan_cell Swap">事务名称</span>
+    <span class="lan_cell Swap">发布单位</span>
+    <span class="lan_cell Swap">发布日期</span>
+    <span class="lan_cell Swap">截止日期</span>
+    <span class="lan_cell Swap">事务状态</span>
+    <span class="lan_cell Swap">操作</span>
+  </div>
+  {{#items}}
+  <div class="lan_row">
+    <span class="lan_cell">{{field1}}</span>
+    <span class="lan_cell">{{field2}}</span>
+    <span class="lan_cell">{{field3}}</span>
+    <span class="lan_cell">{{field4}}</span>
+    <span class="lan_cell">{{field5}}</span>
+    <span class="lan_cell">
+      {{#field1}}<!--  field1 is just the fake json, should be a field of real data that cannot be fals(y) or a function-->
+      <ul class="lan_table_more">
+        <li ><a > 响应 </a>
+          <ul>
+            <li><a >委托</a></li>
+            <li><a > 删除</a></li>
+          </ul>
+        </li>
+      </ul>
+      {{/field1}}
+    </span>
+  </div>
+  {{/items}}
+</div><!--end lan_table -->
+
+<nav class="paginationContainer">
+  <ul class="pagination">
+    <li><a >上一页</a></li>
+    <li><a  class="active">1</a></li>
+    <li><a >2</a></li>
+    <li><a >3</a></li>
+    <li><a >4</a></li>
+    <li><a >5</a></li>
+    <li><a >下一页</a></li>
+  </ul>
+</nav> <!-- /pagging  -->
+
+</div>
+
+<!-- /contaier bottom -->

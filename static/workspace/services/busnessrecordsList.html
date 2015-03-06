@@ -1,0 +1,51 @@
+       
+
+<div class="lan_table col-6-table">
+  <div class="lan_row">
+    <span class="lan_cell Swap">服务代码</span>
+    <span class="lan_cell Swap">服务名称</span>
+    <span class="lan_cell Swap">总价（元）</span>
+    <span class="lan_cell Swap">服务状态</span>
+    <span class="lan_cell Swap">姓名</span>
+    <span class="lan_cell Swap">操作</span>
+  </div>
+  {{#items}}
+  <div class="lan_row">
+    <span class="lan_cell">{{field1}}</span>
+    <span class="lan_cell">{{field2}}</span>
+    <span class="lan_cell">{{field3}}</span>
+    <span class="lan_cell">{{field4}}</span>
+    <span class="lan_cell">{{field5}}</span>
+    <span class="lan_cell">
+      {{#field1}} <!--this should be a non fals(y) field or helper function to determine if this record is data or padding -->
+      <ul class="lan_table_more">
+        <li ><a > 详细 </a>
+          <ul>
+            <li><a >取消</a></li>
+            <li><a > 删除</a></li>
+          </ul>
+        </li>
+      </ul>
+    </span>
+    {{/field1}}
+  </div>
+  {{/items}}
+
+</div><!--end lan_table -->
+
+
+<nav class="paginationContainer">
+  <ul class="pagination">
+    <li><a >上一页</a></li>
+    <li><a  class="active">1</a></li>
+    <li><a >2</a></li>
+    <li><a >3</a></li>
+    <li><a >4</a></li>
+    <li><a >5</a></li>
+    <li><a >下一页</a></li>
+  </ul>
+</nav> <!-- /pagging -->
+
+
+
+

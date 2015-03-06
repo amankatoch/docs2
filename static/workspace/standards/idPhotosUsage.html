@@ -1,0 +1,749 @@
+
+<div class="container_top">
+    <div id="directory_indicator"><span id="root_folder">标准管理</span><span id="sub_folder">证照用途</span> </div>
+
+    <form class="right_containter_top_form" >
+        <span>显示</span>
+        <div class="business_task_select" >
+            <select  >
+                <option value="all">所有类型</option>
+                <option value="one">待办事务</option>
+                <option value="two">已提交事务</option>
+                <option value="three">已完成事务</option>
+            </select>
+        </div>
+        <div class="blueButton createNewActivity blueButton-sm pull-right ">
+            <span class="newPhotoStandard" data-toggle="modal" data-target="#newPhotoUsageModal"><a  >新建</a></span></div>
+    </form>
+
+    <form class="right_containter_top_form tableHeaderForm">
+
+        <div class="fin_date_picker">
+            <span>日期 </span>
+            <input type="date" name="startdate" id="startdate" value="2014-05-05">
+            <em>-</em>
+            <input type="date" name="enddate" class="enddate" value="2014-08-08">
+        </div>
+
+        <div class="form_right_search">
+            <input type="text" class="enddate" placeholder="事务编号/事务名称/发布单位" size="32">
+            <input type="submit" name="financesearch" id="financesearch" value="查询">
+        </div>
+
+    </form>
+
+    <!--
+    <div id="emergent_task">急需响应事务<span id="number_of_task">(2)</span> </div>
+    -->
+</div><!---end of container_top-->
+
+<div class="container_bottom">
+
+
+    <div class="lan_table idPhotoUsageTable col-4-table">
+        <div class="lan_row">
+            <span class="lan_cell Swap">用途代码</span>
+            <span class="lan_cell Swap">证照用途</span>
+            <span class="lan_cell Swap">可选证照类</span>
+            <span class="lan_cell Swap">操作</span>
+        </div>
+        <div class="lan_row">
+            <span class="lan_cell">Y001</span>
+            <span class="lan_cell">证件办理事务</span>
+            <span class="lan_cell">蓝证近照；蓝证通办-白色背景；蓝证通办-蓝色背景  等</span>
+                <span class="lan_cell">
+
+
+
+                 <ul class="lan_table_more">
+
+                     <li ><a >详细 </a>
+                         <ul>
+
+                             <li><a >编辑</a></li>
+                             <li><a > 删除</a></li>
+                         </ul>
+                     </li>
+                 </ul>
+
+
+                </span>
+        </div>
+
+
+        <div class="lan_row">
+            <span class="lan_cell">Y002</span>
+            <span class="lan_cell">中小学教育与学生学业事务</span>
+            <span class="lan_cell">蓝证近照；蓝证通办-白色背景；蓝证通办-蓝色背景  等</span>
+                <span class="lan_cell">
+
+
+
+                 <ul class="lan_table_more">
+
+                     <li ><a >详细 </a>
+                         <ul>
+
+                             <li><a >编辑</a></li>
+                             <li><a > 删除</a></li>
+                         </ul>
+                     </li>
+                 </ul>
+
+
+                </span>
+        </div>
+
+
+        <div class="lan_row">
+            <span class="lan_cell">Y003</span>
+            <span class="lan_cell">高等教育与学生学业事务</span>
+            <span class="lan_cell">蓝证近照；蓝证通办-白色背景；蓝证通办-蓝色背景  等</span>
+                <span class="lan_cell">
+
+
+
+                 <ul class="lan_table_more">
+
+                     <li ><a >详细 </a>
+                         <ul>
+
+                             <li><a >编辑</a></li>
+                             <li><a > 删除</a></li>
+                         </ul>
+                     </li>
+                 </ul>
+
+
+                </span>
+        </div>
+
+
+        <div class="lan_row">
+            <span class="lan_cell">Y004</span>
+            <span class="lan_cell">考试报名事务</span>
+            <span class="lan_cell">蓝证近照；蓝证通办-白色背景；蓝证通办-蓝色背景  等</span>
+                <span class="lan_cell">
+
+
+
+                 <ul class="lan_table_more">
+
+                     <li ><a >详细 </a>
+                         <ul>
+
+                             <li><a >编辑</a></li>
+                             <li><a > 删除</a></li>
+                         </ul>
+                     </li>
+                 </ul>
+
+
+                </span>
+        </div>
+
+
+        <div class="lan_row">
+            <span class="lan_cell">Y005</span>
+            <span class="lan_cell">中国出入境事务</span>
+            <span class="lan_cell">中国护照；港澳通行证；台湾通行证</span>
+                <span class="lan_cell">
+
+
+
+                 <ul class="lan_table_more">
+
+                     <li ><a >详细 </a>
+                         <ul>
+
+                             <li><a >编辑</a></li>
+                             <li><a > 删除</a></li>
+                         </ul>
+                     </li>
+                 </ul>
+
+
+                </span>
+        </div>
+
+        <div class="lan_row">
+            <span class="lan_cell">Y006</span>
+            <span class="lan_cell">亚洲国家签证事务</span>
+            <span class="lan_cell">日本签证；韩国签证；韩国签证；</span>
+                <span class="lan_cell">
+
+
+
+                 <ul class="lan_table_more">
+
+                     <li ><a >详细 </a>
+                         <ul>
+
+                             <li><a >编辑</a></li>
+                             <li><a > 删除</a></li>
+                         </ul>
+                     </li>
+                 </ul>
+
+
+                </span>
+        </div>
+
+        <div class="lan_row">
+            <span class="lan_cell">Y007</span>
+            <span class="lan_cell">欧洲国家签证事务</span>
+            <span class="lan_cell">德国签证；法国签证；意大利签证；</span>
+                <span class="lan_cell">
+
+
+
+                 <ul class="lan_table_more">
+
+                     <li ><a >详细 </a>
+                         <ul>
+
+                             <li><a >编辑</a></li>
+                             <li><a > 删除</a></li>
+                         </ul>
+                     </li>
+                 </ul>
+
+
+                </span>
+        </div>
+
+
+        <div class="lan_row">
+            <span class="lan_cell">Y008</span>
+            <span class="lan_cell">北美洲国家签证事务</span>
+            <span class="lan_cell">美国签证；加拿大签证；</span>
+                <span class="lan_cell">
+
+
+
+                 <ul class="lan_table_more">
+
+                     <li ><a >详细 </a>
+                         <ul>
+
+                             <li><a >编辑</a></li>
+                             <li><a > 删除</a></li>
+                         </ul>
+                     </li>
+                 </ul>
+
+
+                </span>
+        </div>
+
+        <div class="lan_row">
+            <span class="lan_cell">Y009</span>
+            <span class="lan_cell">南美洲国家签证事务</span>
+            <span class="lan_cell">巴西签证；墨西哥签证；阿根廷签证；哥伦比亚签证；</span>
+                <span class="lan_cell">
+
+
+
+                 <ul class="lan_table_more">
+
+                     <li ><a >详细 </a>
+                         <ul>
+
+                             <li><a >编辑</a></li>
+                             <li><a > 删除</a></li>
+                         </ul>
+                     </li>
+                 </ul>
+
+
+                </span>
+        </div>
+
+
+
+    </div><!--end lan_table -->
+
+    <nav class="paginationContainer">
+        <ul class="pagination">
+            <li><a >上一页</a></li>
+            <li><a  class="active">1</a></li>
+            <li><a >2</a></li>
+            <li><a >3</a></li>
+            <li><a >4</a></li>
+            <li><a >5</a></li>
+            <li><a >下一页</a></li>
+        </ul>
+    </nav> <!-- /pagging  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal" id="newPhotoUsageModal" tabindex="-1" role="dialog" aria-labelledby="newStandardModal" aria-hidden="true">
+        <div class="modal-dialog medium">
+            <div class="modal-content">
+                <div class="modal-header modal-header-primary blueHeader ">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+                            style="color:white;">×</span></button>
+                    <h4 class="modal-title">新建证照用途</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-horizontal lan_push_down" role="form">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+
+                                <div class="form-group">
+                                    <label for="input1" class="col-sm-4 control-label">证照用途</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" id="input1" class="form-control" value="" placeholder="请输入真照用途名称" >
+                                    </div>
+                                </div>
+
+                            </div><!--end of col-->
+                            <div class="col-sm-5">
+
+                                <div class="form-group">
+                                    <label for="input2" class="col-sm-4 control-label">用途代码</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" id="input2" class="form-control" value="" placeholder="请输入用途代码" >
+                                    </div>
+                                </div>
+
+                            </div><!--end of col-->
+
+
+
+                        </div><!---end of row--->
+
+
+                        <div class="clearfix"></div>
+
+
+                    </form>
+
+
+
+
+
+                <div class="idPhotoUsagePopupBox">
+
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-sm-5 swallowRight">
+                                <div class="detailPageUserIntroBox idPhotoUsagePopupLeftBox white_bg noMargin lan_gray_border">
+                                    <div class="detailPageUserIntroBoxHeader">
+
+                                        可选证照类别
+
+                                    </div>
+                                    <div class="detailPageUserIntroBoxBody ">
+                                        <table class="table-responsive   optionShowTable">
+                                            <tbody>
+                                            <tr id="Z001">
+                                                <td >
+                                                    Z001
+
+                                                </td>
+                                                <td>
+
+                                                蓝证近照
+                                                </td>
+
+                                                <td >
+                                                    <button class="btn btn-default itemSelected specialBlue pull-right lessPadding">
+                                                        已选
+                                                    </button>
+
+                                                    &nbsp;
+
+                                                </td>
+
+                                            </tr>
+
+
+                                            <tr id="Z002">
+                                                <td>
+                                                    Z002
+
+                                                </td>
+                                                <td>
+
+                                                    蓝证通办-白色背景
+                                                </td>
+
+                                                <td >
+                                                    <button class="btn btn-default itemSelected specialBlue pull-right lessPadding">
+                                                        已选
+                                                    </button>
+
+                                                    &nbsp;
+
+                                                </td>
+
+                                            </tr>
+
+
+
+                                            <tr>
+                                                <td>
+                                                    Z003
+
+                                                </td>
+                                                <td>
+
+                                                    蓝证通办-白色背景
+                                                </td>
+
+                                                <td >
+                                                    <button class="btn btn-default lan_white blue_bg pull-right lessPadding">
+                                                        选择
+                                                    </button>
+
+                                                    &nbsp;
+
+                                                </td>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>
+                                                    Z004
+
+                                                </td>
+                                                <td>
+
+                                                    蓝证通办-红色背景
+                                                </td>
+
+                                                <td >
+                                                    <button class="btn btn-default lan_white blue_bg pull-right lessPadding">
+                                                        选择
+                                                    </button>
+
+                                                    &nbsp;
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Z005
+
+                                                </td>
+                                                <td>
+
+                                                    小1寸-白色背景
+                                                </td>
+
+                                                <td >
+                                                    <button class="btn btn-default itemSelected specialBlue pull-right lessPadding">
+                                                        已选
+                                                    </button>
+
+                                                    &nbsp;
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Z006
+
+                                                </td>
+                                                <td>
+
+                                                    小1寸-红色背景
+                                                </td>
+
+                                                <td >
+                                                    <button class="btn btn-default lan_white blue_bg pull-right lessPadding">
+                                                        选择
+                                                    </button>
+
+                                                    &nbsp;
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Z007
+
+                                                </td>
+                                                <td>
+
+                                                    小2寸-白色背景
+                                                </td>
+
+                                                <td >
+                                                    <button class="btn btn-default lan_white blue_bg pull-right lessPadding">
+                                                        选择
+                                                    </button>
+
+                                                    &nbsp;
+
+                                                </td>
+
+                                            </tr>
+
+
+
+                                            </tbody>
+
+
+                                        </table>
+
+
+
+
+                                    </div>  <!---end of detailPageUserIntroBoxBody-->
+
+
+
+                                    </div><!--end of detailPageUserIntroBox  -->
+
+
+
+
+
+
+
+
+                            </div><!---end of col--->
+
+                            <div class="col-sm-2 selectPhotoUsageArrowContainer">
+
+
+                            </div>
+
+                            <div class="col-sm-5 swallowLeft">
+
+
+
+                                <div class="detailPageUserIntroBox idPhotoUsagePopupRightBox white_bg  noMargin lan_gray_border">
+                                    <div class="detailPageUserIntroBoxHeader">
+
+                                        已添加证照类别
+
+
+                                        <span class="pull-right specialBlue clearAllSelections">清空</span>
+
+
+                                        <div class="clearfix"></div>
+
+                                    </div>
+                                    <div class="detailPageUserIntroBoxBody ">
+
+
+
+
+
+                                        <table class="table-responsive optionSaveTable">
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    Z001
+
+                                                </td>
+                                                <td>
+
+                                                    蓝证近照
+                                                </td>
+
+                                                <td >
+                                                    <button class="btn btn-default specialBlue pull-right lessPadding">
+                                                        已选
+                                                    </button>
+
+                                                    &nbsp;
+
+                                                </td>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>
+                                                    Z002
+
+                                                </td>
+                                                <td>
+
+                                                    蓝证通办-白色背景
+                                                </td>
+
+                                                <td >
+                                                    <button class="btn btn-default specialBlue pull-right lessPadding">
+                                                        已选
+                                                    </button>
+
+                                                    &nbsp;
+
+                                                </td>
+
+                                            </tr>
+
+
+
+
+
+                                            <tr>
+                                                <td>
+                                                    Z005
+
+                                                </td>
+                                                <td>
+
+                                                    小1寸-白色背景
+                                                </td>
+
+                                                <td >
+                                                    <button class="btn btn-default specialBlue pull-right lessPadding">
+                                                        已选
+                                                    </button>
+
+                                                    &nbsp;
+
+                                                </td>
+
+                                            </tr>
+
+
+
+
+
+                                            </tbody>
+
+
+                                        </table>
+
+
+
+
+
+
+
+
+                                    </div>  <!---end of detailPageUserIntroBoxBody-->
+
+                                </div><!--end of detailPageUserIntroBox  -->
+
+
+
+
+
+
+
+
+                            </div><!---end of col--->
+
+
+
+
+
+
+                        </div><!---end of row--->
+
+
+
+
+                    </div><!--end of container fluid-->
+
+
+
+
+
+
+
+
+                    <div class="clearfix"></div>
+
+
+                </div>
+
+
+
+
+
+
+
+                </div><!--end of modal body--->
+
+
+                <div class="modal-footer  fancyBoxGrayFooter">
+
+
+                    <div class="footer_operation_container">
+                        <div class="grayButton formPreview" data-dismiss="modal"><span>取消</span></div>
+                        <div class="blueButton formPreview " data-dismiss="modal"><span>确认</span></div>
+
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>    <!--- modal -->
+
+
+
+
+
+</div> <!-- /contaier bottom -->
+
+
+
+
+
+

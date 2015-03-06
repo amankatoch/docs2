@@ -1,0 +1,71 @@
+
+
+<div class="container_top">
+  <div id="directory_indicator"><span id="root_folder">财务管理</span><span id="arrow"> </span><span id="sub_folder">{{currentPage}}</span> </div>
+
+
+
+  <form class=" pull-left right_containter_top_form">
+    <span>显示</span>
+    <div class="business_task_select">
+      <select>
+        <option value="all">所有事务</option>
+        <option value="one">待办事务</option>
+        <option value="two">已提交事务</option>
+        <option value="three">已完成事务</option>
+      </select>
+    </div>
+    <div class="clearfix"></div>
+  </form>
+
+  <div id="recharge" class="pull-right">
+    {{#balance}}
+          <span class="balance">{{.}}</span> 
+    {{/balance}}
+    {{#expences}}
+      <span class="expences">{{.}}</span> 
+    {{/expences}}
+    {{#showChargeButton}}
+    <div  class="blueButton  pull-right">
+      <span class="lan_hpadding_20 rechargeBtn lan_vpadding_5  ">充值</span>
+    </div>
+    {{/showChargeButton}}
+  </div>
+
+  <div class="clearfix"></div>
+
+
+
+
+
+  <form class="right_containter_top_form tableHeaderForm">
+
+    <div class="fin_date_picker"> 
+      <span>日期 </span>
+      <input type="date" value="2014-05-05" id="startdate" name="startdate">
+      <em>-</em>
+      <input type="date" value="2014-08-08" id="enddate" name="enddate">
+    </div>
+
+    <div class="form_right_search">
+      <input type="text" size="32" placeholder="事务编号/事务名称/发布单位" id="enddate">
+      <input type="submit" value="查询" id="financesearch" name="financesearch">
+    </div>
+
+  </form>
+
+  <!--          <form  class="business_task_select">
+           <span>显示</span><select  >
+              <option value="all">所有事务</option>
+               <option value="one">待办事务</option>
+               <option value="two">已提交</option>
+               <option value="three">已完成</option>
+           </select>
+             <span>日期 </span><input type="date" name="startdate" id="startdate" value="2014-05-05">
+              <input  type="date" name="enddate" id="enddate" value="2014-08-08">
+             <input type="submit" name="financesearch" id="financesearch" value="查询"> 
+         </form>-->
+
+</div><!---end of container_top-->
+
+<div class="container_bottom">

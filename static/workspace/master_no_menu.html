@@ -1,0 +1,107 @@
+
+<div id="wrapperSelector" class="wrapper container ">
+  <!--wrapper-->
+
+  <!--header- -personal-->
+  <div class="row">
+    
+    
+    <div id="header">
+
+    </div><!--end of header-->
+
+    <!-- responsive navifation starts from here -->
+    <nav class="navbar navbar-default" role="navigation" id="stickyribbon">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                data-target="#example-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <div class="topMobileNavigations"></div>
+      </div>
+    </nav>
+
+    <!-- responsive nevigation here -->
+
+
+    <div id="main_container">
+
+      <!--left navigations-->
+      <div class="leftNavigations"></div>
+
+      <div class="rightContainer" id="right_container">
+
+      </div><!--end of right container-->
+
+
+    </div><!--end of main container-->
+    
+    </div><!--end of row -->
+
+    <div id="footer" >
+      <div id="footer_text">
+        <div id="footer_nav">
+          <a ><span>  关于我们 </span></a>
+          <a ><span>   联系我们	</span></a>
+          <a > <span>   合作伙伴</span></a>
+          <a ><span>   网点注册	</span></a>
+
+        </div>
+        <div id="copy_right"> 
+          Copyright © 2013 Lanid.cn.
+          <br class="mobile_display_break hidden-lg">
+          上海蓝迪数码科技有限公司 版权所有 
+          <br class="mobile_display_break hidden-lg">
+          All Rights Reserved. POWER BY Landigital  
+        </div>
+      </div>
+      <div id="partners">
+
+        <!--<img src="../images/登陆界面/Footer/vertical_line.jpg" />-->
+        <a > <div id="kexinwang" class="parnter_icon"> </div></a>
+        <!-- <img  src="../commons/images/right_vertical-line_03.jpg"  > -->
+        <a > <div id="union_pay" class="parnter_icon"> </div></a>
+        <a > <div id="zhifubao" class="parnter_icon"> </div></a>
+        <a > <div id="verysign" class="parnter_icon"> </div></a>
+        <!-- <img  src="../commons/images/right_vertical-line_03.jpg"  > -->
+        <a >  <div id="web_police" class="parnter_icon"> </div></a>
+      </div><!--end of partners-->
+
+
+
+    </div>    
+
+
+  <!--  end of wrapper -->
+
+
+</div>
+<!-- Script for sticky header -->
+<script type="text/javascript">
+  $(function () {
+    var stickyRibbonTop = $('#stickyribbon').offset().top;
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > stickyRibbonTop) {
+        $('#stickyribbon').css({position: 'fixed', top: '0px'});
+      } else {
+        $('#stickyribbon').css({position: 'static', top: '0px'});
+      }
+    });
+  });
+</script>
+
+
+<!-- modal -->
+<div class="modal stripped_modal " id="platformAPIsModal" tabindex="-1" role="dialog" aria-hidden="true">
+</div> 
+<!-- end modal -->
+
+
+
+

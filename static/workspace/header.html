@@ -1,0 +1,81 @@
+            
+      			
+             <div id="logo" class="not_home_logo"
+                  data-action-click='workspace:header:bbqUpdate'
+                  data-linkto='/workspace/welcome'>  </div>
+            <!-- <a href="#/workspace/welcome"><div id="locatiion"><div id="location_text">上海 <span>切换所在城市</span></div></div></a>-->
+            <div id="top_right_info_and_search">
+             
+                <div id="top_right_info">
+                 
+                
+                <ul>
+                     <li><a href="/" data-action-click='workspace:header:logout'>安全退出</a></li>
+                    <li id="settings_tab">设置
+                     	  <ul>
+                             <li><a data-action-click="workspace:header:openSettings"> 平台功能</a></li>
+                             <li><a >修改密码</a></li>
+                       	 </ul>
+                      </li>
+                     <li>{{user.loginName}}</li>
+                     <li>欢迎</li>
+                 </ul>
+                 <div id="clearFix"></div>
+         		
+           		
+            </div><!---top right info -->
+         
+            
+            
+            
+            
+            
+             <div id="search_container"> 
+                <div class="mobile_search_icon2">
+                       <img src="../commons/images/search-white.png" style="width:35px;">
+              
+                      </div>
+             <div id="search">
+              
+               <form action="" method="get">
+              
+            	<div id="search_text_field">
+               <input id="submit_search" type="image" src="../commons/images/search-button_06.jpg" alt='search'
+                      data-action-click='workspace:header:search'/>
+               <input type="search" name="lan_search"  placeholder="事务编号/ID" class="search-id">
+              </div>
+                 <!-- <div id="home_search_arrow"><img src="../../../../../../Lan_loggin/search-frame_arrow.jpg" /></div>-->
+                  
+            	 <!-- <div id="select_list" >
+                 <span class="css-select-moz">
+             	<select class="css-select" >
+                  <option value="1">全部</option>
+                  <option value="2">网点</option>
+                  <option value="3">单位</option>
+                  <option value="4">用户</option>
+             	</select>
+                  </span>
+                </div> -->
+
+                <div class="input-group-btn">
+                            <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+                                    全部
+                            <span class="caret">
+                            </span></button>
+                            <ul role="menu" class="dropdown-menu">
+                              <li><a >网点</a></li>
+                              <li><a >单位</a></li>
+                              <li><a >用户</a></li>
+                            </ul>
+                          </div>
+                </form>
+  
+                         
+            
+             
+                 </div><!--end of search-->
+                 <!-- <div id="search_botom_border"></div> -->
+             
+             </div><!--/search container-->
+            </div>  <!--end of top_right_info_and_search-->
+      
